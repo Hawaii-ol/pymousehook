@@ -2,7 +2,8 @@ import ctypes
 from ctypes import wintypes
 
 WH_MOUSE_LL = 14  # 低级鼠标钩子常量
-WM_LBUTTONDOWN = 0x0202  # 左键按下事件常量
+WM_LBUTTONDOWN = 0x0201  # 左键按下事件常量
+WM_LBUTTONUP = 0x0202  # 左键回弹事件常量
 HC_ACTION = 0
 
 user32 = ctypes.WinDLL('user32', use_last_error=True)
